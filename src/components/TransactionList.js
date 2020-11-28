@@ -1,10 +1,13 @@
 import React,{useContext} from 'react';
-import {GlobalContext, GlobalProvider} from '../context/GlobalState';
+import {GlobalContext} from '../context/GlobalState';
 import Transaction from './Transaction';
 
+//transactionlist component
 const TransactionList=()=>{
+
+    //transactions component created. initiated with GlobalContext
     const {transactions}=useContext(GlobalContext);
-    
+    //for each transactions component imported Transaction component is mapped. props of id and transaction is passed
     return(
         <div>
             <h3>History</h3>
