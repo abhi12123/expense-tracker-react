@@ -14,7 +14,7 @@ import {GlobalProvider} from './context/GlobalState';
 function App() {
   return (
     <GlobalProvider>
-      <div>
+      <div className="expense-app">
         <Header/>
         <Balance/>
         <TransactionList/>

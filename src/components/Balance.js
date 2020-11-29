@@ -30,19 +30,26 @@ const Balance =()=>{
         item=>item<0
     );
     //expense is the total of expenselist array
-    const expense=expenselist.reduce(
+    let expense=expenselist.reduce(
         (a,b)=>(a+b),0
     );
+    expense=Math.abs(expense)
 
 
     return(
-        <div>
-            <h2>Total Balance</h2>
-            <p>{total}</p>
-            <h2>Income</h2>
-            <p>{income}</p>
-            <h2>Expense</h2>
-            <p>{expense}</p>
+        <div class='balance'>
+            <div class='total-balance'>
+                <h2>Total Balance</h2>
+                <h1>Rs.{total}</h1>
+            </div>
+            <div class='income'>
+                <h2>Income :</h2>
+                <h1>Rs.{income}</h1>
+            </div>
+            <div class="expense">
+                <h2>Expense :</h2>
+                <h1>Rs.{expense}</h1>
+            </div>
         </div>
     )
 }

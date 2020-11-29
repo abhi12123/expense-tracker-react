@@ -9,8 +9,8 @@ const TransactionList=()=>{
     const {transactions}=useContext(GlobalContext);
     //for each transactions component imported Transaction component is mapped. props of id and transaction is passed
     return(
-        <div>
-            <h3>History</h3>
+        <div class='transactionlist'>
+            <h2>History</h2>
             <ul>
                 {transactions.map(transaction=>(
                     <Transaction key={transaction.id} transaction={transaction}/>

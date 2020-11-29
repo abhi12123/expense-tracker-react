@@ -9,8 +9,8 @@
 
      //onclicking delete transaction, transaction id is passed
      return(
-        <li>{transaction.text} {transaction.amount}Rupees 
-            <button onClick={()=>deleteTransaction(transaction.id)}>X</button>
+        <li className="transaction"><b>{transaction.text}:</b> {transaction.amount}Rupees 
+            <button onClick={()=>deleteTransaction(transaction.id)}><i class="fas fa-times-circle"></i></button>
         </li>
      )
  }

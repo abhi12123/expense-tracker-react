@@ -27,13 +27,13 @@ const AddTransaction=()=>{
 
     //setText and setAmount sets the value of the content of input
     return(
-        <div>
-            <h3>Add new Transaction</h3>
+        <div className="add-transaction">
+            <h2>Add new Transaction</h2>
             <form onSubmit={onSubmit}>
                 <label>Text</label>
-                <input value={text} onChange={(e)=>(setText(e.target.value))} type='text'></input>
+                <input size='5'  value={text} onChange={(e)=>(setText(e.target.value))} type='text'></input>
                 <label>Amount</label>
-                <input value={amount} onChange={(e)=>(setAmount(e.target.value))} type='number'></input>
+                <input size='5' value={amount} onChange={(e)=>(setAmount(e.target.value))} type='number'></input>
                 <button>Add Transaction</button>
             </form>
         </div>

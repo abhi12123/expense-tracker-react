@@ -10,17 +10,17 @@ const intialState={
         {
             id:1,
             text:'Salary',
-            amount:500
+            amount:10000
         },
         {
             id:2,
             text:'Books',
-            amount:-100
+            amount:-500
         },
         {
             id:3,
-            text:'Camera',
-            amount:-200
+            text:'Coffee',
+            amount:-50
         }
     ]
 }
